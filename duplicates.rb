@@ -55,7 +55,9 @@ def process_entry(entry, duplicates_hash_map)
       end
     end
   end
-  duplicates_hash_map[key] = file_set.to_a
+  if file_set.length > 0
+    duplicates_hash_map[key] = file_set.to_a
+  end
 end
 
 # prints grouped duplicates with hash and file names. if no duplicates found prints message about that
