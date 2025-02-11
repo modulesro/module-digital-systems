@@ -28,15 +28,15 @@ and if this is true then subsequent comparing with API FileUtils.identical is us
 
 • program expects two correct input arguments:
 
-  1, first argument IS mandatory root path where search for files should start and must be directory e.g. "/c/work/modulesro/"
+  1, first argument IS mandatory root path where search for files should start and must be directory e.g. "/c/work/modulesro"
   
 2, second argument IS NOT mandatory and represents valid file mask e.g. "*.txt" . if not passed default all files is used  
 
 • examples of call:
 
-  ruby ./duplicates.rb /c/work/modulesro/ *.txt    => compare all txt files
+  ruby ./duplicates.rb /c/work/modulesro *.bin    => compare all txt files
   
-  ruby ./duplicates.rb /c/work/modulesro/          => compare all files
+  ruby ./duplicates.rb /c/work/modulesro          => compare all files
 
-it has been tested on unix and win platforms and also tested on files with same MD5 hash and 
-same file size but with different content 
+it has been tested on unix and win platforms including hidden files and symbolic links and also tested on files with same MD5 hash and 
+same file size but with different content (MD5 collision => see examples first-md5-collision.bin and second-md5-collision.bin)
