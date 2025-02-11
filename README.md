@@ -38,3 +38,5 @@ and if this is true then subsequent comparing with API FileUtils.identical is us
   
   ruby ./duplicates.rb /c/work/modulesro/          => compare all files
 
+it has been tested on unix and win platforms and also tested on files with same MD5 hash and 
+same file size but with different content 
