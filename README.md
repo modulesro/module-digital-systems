@@ -35,5 +35,6 @@ and if this is true then subsequent comparing with API FileUtils.identical is us
 • examples of call:
 
   ruby ./duplicates.rb /c/work/modulesro/ *.txt    => compare all txt files
+  
   ruby ./duplicates.rb /c/work/modulesro/          => compare all files
 
