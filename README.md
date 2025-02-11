@@ -27,5 +27,13 @@ Associated documentation (for both user and developer perspective) is a viable p
 and if this is true then subsequent comparing with API FileUtils.identical is used
 
 • program expects two correct input arguments:
-   
+
+  1, first argument IS mandatory root path where search for files should start and must be directory e.g. "/c/work/modulesro/"
+  
+2, second argument IS NOT mandatory and represents valid file mask e.g. "*.txt" . if not passed default all files is used  
+
+• examples of call:
+
+  ruby ./duplicates.rb /c/work/modulesro/ *.txt    => compare all txt files
+  ruby ./duplicates.rb /c/work/modulesro/          => compare all files
 
